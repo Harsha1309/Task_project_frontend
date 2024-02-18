@@ -12,10 +12,10 @@ const LoginPage = ({ onLogin }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/login', {
-        email,
-        password
-      });
+      // const response = await axios.post('http://localhost:3000/login', {
+      //   email,
+      //   password
+      // });
       console.log('Login successful:', response.data);
       onLogin(email);
       navigate('/dashboard');
