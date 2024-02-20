@@ -227,7 +227,7 @@ img{
     margin-left: 4px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
     .sideBar {
         display: none;
     }
@@ -251,7 +251,7 @@ img{
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .sideBar {
         display: none;
     }
@@ -410,4 +410,13 @@ img{
     .item5 {
         display: none;
     }
+}
+
+.searchbtn{
+    display: flex;
+    align-items: center;
+    
+}
+.searchbtn > input{
+    margin-right: 10px;
 }
