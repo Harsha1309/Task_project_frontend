@@ -12,7 +12,7 @@ const LoginPage = ({ onLogin }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/login', {
+      const response = await axios.post('https://task-project-backend.onrender.com/login', {
         email,
         password
       });

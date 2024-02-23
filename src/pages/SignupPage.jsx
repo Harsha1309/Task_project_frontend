@@ -13,7 +13,7 @@ const SignupPage = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/signup', {
+      const response = await axios.post('https://task-project-backend.onrender.com/signup', {
         email,
         password,
         username

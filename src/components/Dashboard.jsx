@@ -3,188 +3,7 @@ import Arrow from "../assets/arrow.png";
 import "./style.css";
 import axios from "axios";
 
-// const data = [
-//     // {
-//     //   "Article": 1,
-//     //   "Product": "Widget A",
-//     //   "InPrice": 10,
-//     //   "Price": 20,
-//     //   "Unit": "Each",
-//     //   "InStock": 50,
-//     //   "Description": "High-quality widget for various applications."
-//     // },
-//     {
-//       "Article": 2,
-//       "Product": "Gadget B",
-//       "InPrice": 15,
-//       "Price": 30,
-//       "Unit": "Each",
-//       "InStock": 40,
-//       "Description": "Advanced gadget with multiple features."
-//     },
-//     {
-//       "Article": 3,
-//       "Product": "Tool C",
-//       "InPrice": 20,
-//       "Price": 40,
-//       "Unit": "Each",
-//       "InStock": 30,
-//       "Description": "Durable tool for professional use."
-//     },
-//     {
-//       "Article": 4,
-//       "Product": "Accessory D",
-//       "InPrice": 5,
-//       "Price": 10,
-//       "Unit": "Pair",
-//       "InStock": 100,
-//       "Description": "Essential accessory for your device."
-//     },
-//     {
-//       "Article": 5,
-//       "Product": "Component E",
-//       "InPrice": 8,
-//       "Price": 16,
-//       "Unit": "Each",
-//       "InStock": 75,
-//       "Description": "Versatile component for various systems."
-//     },
-//     {
-//       "Article": 6,
-//       "Product": "Service F",
-//       "InPrice": 50,
-//       "Price": 100,
-//       "Unit": "Hour",
-//       "InStock": "0",
-//       "Description": "Expert service for your needs."
-//     },
-//     {
-//       "Article": 7,
-//       "Product": "Product G",
-//       "InPrice": 25,
-//       "Price": 50,
-//       "Unit": "Each",
-//       "InStock": 20,
-//       "Description": "Premium product with exceptional quality."
-//     },
-//     {
-//       "Article": 8,
-//       "Product": "Tool H",
-//       "InPrice": 18,
-//       "Price": 36,
-//       "Unit": "Each",
-//       "InStock": 35,
-//       "Description": "Versatile tool suitable for various tasks."
-//     },
-//     {
-//       "Article": 9,
-//       "Product": "Accessory I",
-//       "InPrice": 7,
-//       "Price": 14,
-//       "Unit": "Each",
-//       "InStock": 80,
-//       "Description": "Handy accessory for everyday use."
-//     },
-//     {
-//       "Article": 10,
-//       "Product": "Component J",
-//       "InPrice": 12,
-//       "Price": 24,
-//       "Unit": "Each",
-//       "InStock": 60,
-//       "Description": "Essential component for electronic devices."
-//     },
-//     {
-//       "Article": 11,
-//       "Product": "Widget K",
-//       "InPrice": 22,
-//       "Price": 44,
-//       "Unit": "Each",
-//       "InStock": 25,
-//       "Description": "Compact widget for various applications."
-//     },
-//     {
-//       "Article": 12,
-//       "Product": "Gadget L",
-//       "InPrice": 35,
-//       "Price": 70,
-//       "Unit": "Each",
-//       "InStock": 15,
-//       "Description": "Innovative gadget with cutting-edge technology."
-//     },
-//     {
-//       "Article": 13,
-//       "Product": "Tool M",
-//       "InPrice": 30,
-//       "Price": 60,
-//       "Unit": "Each",
-//       "InStock": 20,
-//       "Description": "Heavy-duty tool for demanding tasks."
-//     },
-//     {
-//       "Article": 14,
-//       "Product": "Accessory N",
-//       "InPrice": 10,
-//       "Price": 20,
-//       "Unit": "Pair",
-//       "InStock": 90,
-//       "Description": "Stylish accessory to complement your outfit."
-//     },
-//     {
-//       "Article": 15,
-//       "Product": "Component O",
-//       "InPrice": 15,
-//       "Price": 30,
-//       "Unit": "Each",
-//       "InStock": 70,
-//       "Description": "Essential component for mechanical systems."
-//     },
-//     {
-//       "Article": 16,
-//       "Product": "Service P",
-//       "InPrice": 40,
-//       "Price": 80,
-//       "Unit": "Hour",
-//       "InStock": '0',
-//       "Description": "Professional service tailored to your requirements."
-//     },
-//     {
-//       "Article": 17,
-//       "Product": "Product Q",
-//       "InPrice": 20,
-//       "Price": 40,
-//       "Unit": "Each",
-//       "InStock": 30,
-//       "Description": "Premium product crafted with precision."
-//     },
-//     {
-//       "Article": 18,
-//       "Product/Service": "Tool R",
-//       "InPrice": 25,
-//       "Price": 50,
-//       "Unit": "Each",
-//       "InStock": 40,
-//       "Description": "Reliable tool for professional use."
-//     },
-//     {
-//       "Article": 19,
-//       "Product": "Accessory S",
-//       "InPrice": 8,
-//       "Price": 16,
-//       "Unit": "Each",
-//       "InStock": 85,
-//       "Description": "Practical accessory for outdoor activities."
-//     },
-//     {
-//       "Article": 20,
-//       "Product": "Component T",
-//       "InPrice": 14,
-//       "Price": 28,
-//       "Unit": "Each",
-//       "InStock": 65,
-//       "Description": "Versatile component for electronic circuits."
-//     }
-//   ]
+
 
 function Dashboard() {
   //   const [data,setData] = useState([])
@@ -202,7 +21,7 @@ function Dashboard() {
     const fetchData = async () => {
       try {
         // Make a GET request to your backend API
-        const response = await axios.get(`http://localhost:3000/data/${inputValue}/${inputProduct}`);
+        const response = await axios.get(`https://task-project-backend.onrender.com//data/${inputValue}/${inputProduct}`);
         // Extract the data from the response
         const responseData = response.data;
         // console.log(responseData);
@@ -219,7 +38,7 @@ function Dashboard() {
   const handleButton = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/data/${inputValue}/${inputProduct}`
+        `https://task-project-backend.onrender.com/data/${inputValue}/${inputProduct}`
       );
       const responseData = response.data;
       console.log(responseData)
