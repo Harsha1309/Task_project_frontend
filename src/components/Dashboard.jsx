@@ -21,7 +21,7 @@ function Dashboard() {
     const fetchData = async () => {
       try {
         // Make a GET request to your backend API
-        const response = await axios.get(`https://task-project-backend.onrender.com//data/${inputValue}/${inputProduct}`);
+        const response = await axios.get(`https://task-project-backend.onrender.com/data/${inputValue}/${inputProduct}`);
         // Extract the data from the response
         const responseData = response.data;
         // console.log(responseData);
