@@ -35,7 +35,7 @@ img{
     border-radius: 30px;
 }
 .detail{
-    padding: 10px;
+    padding: 50px;
     font-family: monospace;
 }
 .name{
@@ -186,9 +186,9 @@ img{
 }
 .item7 {
     width: 23%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    /* overflow-x: hidden; */
+    /* white-space: nowrap; */
+    
     
 }
 .item {
@@ -226,7 +226,10 @@ img{
     width: 13px;
     margin-left: 4px;
 }
-
+.image{
+    width: 15px;
+    margin-left: 6px;
+}
 @media (max-width: 1000px) {
     .sideBar {
         display: none;

@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
+
 import Arrow from "../assets/arrow.png";
+import Image1 from "../assets/Image1.jpg";
+import Image2 from "../assets/Image2.jpg";
+import Image3 from "../assets/Image3.jpg";
 import "./style.css";
 import axios from "axios";
 
@@ -97,15 +101,15 @@ function Dashboard() {
         <div className="rightbtns">
           <div className="btn">
             New Product
-            <img src={Arrow} alt="" className="arrow" />
+            <img src={Image1} alt="" className="image" />
           </div>
           <div className="btn">
             Print List
-            <img src={Arrow} alt="" className="arrow" />
+            <img src={Image3} alt="" className="image" />
           </div>
           <div className="btn">
             Advanced mode
-            <img src={Arrow} alt="" className="arrow" />
+            <img src={Image2} alt="" className="image" />
           </div>
         </div>
       </div>
