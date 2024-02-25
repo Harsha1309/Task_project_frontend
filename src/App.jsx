@@ -18,10 +18,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<IndexPage></IndexPage>}></Route>
+        <Route path='/' element={<Panel name={username}></Panel>}></Route>
+        {/* <Route path='/' element={<IndexPage></IndexPage>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
-        <Route path='/login' element={<Login onLogin={handleLogin}></Login>}></Route>
-        <Route path='/dashboard' element={<Panel name={username}></Panel>}></Route>
+        <Route path='/login' element={<Login onLogin={handleLogin}></Login>}></Route> */}
       </Routes>
         {/* <Main></Main> */}
     </Router>
