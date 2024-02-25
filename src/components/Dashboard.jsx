@@ -77,7 +77,7 @@ function Dashboard() {
           <div className="searchbtn">
             <input
               type="text"
-              placeholder="Enter text here"
+              placeholder="Enter article no."
               className="inputfield"
               value={inputValue}
               onChange={handleInputChange}
@@ -90,7 +90,7 @@ function Dashboard() {
           <div class="searchbtn">
             <input
               type="text"
-              placeholder="Enter text here"
+              placeholder="Enter second product no."
               className="inputfield"
               value={inputProduct}
               onChange={handleInputProduct}

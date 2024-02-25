@@ -258,7 +258,7 @@ img{
         width: 40px;
     }
     .image {
-        display: none;
+        display: block;
     }
     .detail {
         display: none;
@@ -282,7 +282,7 @@ img{
         width: 40px;
     }
     .image {
-        display: none;
+        display: block;
     }
     .detail {
         display: none;
@@ -309,13 +309,13 @@ img{
         width: 30px;
     }
     .image {
-        display: none;
+        display: block;
     }
     .detail {
         display: none;
     }
     .btn {
-        font-size: 0;
+        font-size: 10px;
         width: 70px;
     }
 
